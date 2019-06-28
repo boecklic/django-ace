@@ -42,7 +42,7 @@ class AceWidget(forms.Textarea):
 
     @property
     def media(self):
-        js = ["django_ace/ace/ace.js", "django_ace/widget.js"]
+        js = ["https://requirejs.org/docs/release/2.3.5/minified/require.js", "django_ace/ace/ace.js", "django_ace/widget.js"]
 
         if self.mode:
             js.append("django_ace/ace/mode-%s.js" % self.mode)
